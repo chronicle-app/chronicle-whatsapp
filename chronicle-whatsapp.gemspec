@@ -2,17 +2,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "chronicle/spotify/version"
+require "chronicle/whatsapp/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "chronicle-spotify"
-  spec.version       = Chronicle::Spotify::VERSION
+  spec.name          = "chronicle-whatsapp"
+  spec.version       = Chronicle::Whatsapp::VERSION
   spec.authors       = ["Andrew Louis"]
   spec.email         = ["andrew@hyfen.net"]
 
-  spec.summary       = "Spotify importer for Chronicle"
-  spec.description   = "Spotify connectors"
-  spec.homepage      = "https://github.com/chronicle-app/chronicle-spotify"
+  spec.summary       = "Whatsapp importer for Chronicle"
+  spec.description   = "Whatsapp connectors"
+  spec.homepage      = "https://github.com/chronicle-app/chronicle-whatsapp"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/chronicle-app/chronicle-spotify"
-    spec.metadata["changelog_uri"] = "https://github.com/chronicle-app/chronicle-spotify"
+    spec.metadata["source_code_uri"] = "https://github.com/chronicle-app/chronicle-whatsapp"
+    spec.metadata["changelog_uri"] = "https://github.com/chronicle-app/chronicle-whatsapp"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -37,7 +37,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "chronicle-etl", "~> 0.5"
-  spec.add_dependency "omniauth-spotify"
 
   spec.add_development_dependency "bundler", "~> 2.3"
   spec.add_development_dependency "rake", "~> 13.0.6"
